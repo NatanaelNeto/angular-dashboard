@@ -1,0 +1,39 @@
+{
+  "coins": [
+    {
+      "name": "Bitcoin",
+      "shortname": "BTC",
+      "value": 29477.10,
+      "cap": 572.8,
+      "img": "/assets/btc.png"
+    },
+    {
+      "name": "Ethereum Classic",
+      "shortname": "ETC",
+      "value": 18.30,
+      "cap": 2.6,
+      "img": "/assets/etc.png"
+    },
+    {
+      "name": "Litecoin",
+      "shortname": "LTC",
+      "value": 91.26,
+      "cap": 6.7,
+      "img": "/assets/ltc.png"
+    },
+    {
+      "name": "Solana",
+      "shortname": "SOL",
+      "value": 25.21,
+      "cap": 10.9,
+      "img": "/assets/sol.png"
+    },
+    {
+      "name": "XRP",
+      "shortname": "XRP",
+      "value": 0.71,
+      "cap": 37.6,
+      "img": "/assets/xrp.png"
+    }
+  ]
+}

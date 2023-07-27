@@ -1,0 +1,134 @@
+.sidebar {
+  background-color: #222;
+  height: 100vh;
+  width: 100px;
+  padding: 20px;
+  padding-right: 0;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+.sidebar.sidebar-active {
+  width: 300px;
+}
+
+.sidebar ul {
+  position: relative;
+  padding: 0;
+}
+
+.sidebar ul li {
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+}
+
+.sidebar ul li.logo {
+  margin-bottom: 60px;
+}
+
+.sidebar ul li img {
+  width: 260px;
+  opacity: 0;
+  transition: 0.25s ease;
+}
+
+.sidebar.sidebar-active ul li img {
+  opacity: 1;
+}
+
+.sidebar ul li a, .sidebar ul li.sidebar_toggle {
+  position: relative;
+  color: #fafafa;
+  display: flex;
+  flex-flow: row;
+  white-space: nowrap;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.sidebar ul li.sidebar_toggle,
+.sidebar ul li .sidebar_menu-icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 60px;
+  height: 70px;
+  transition: 0.25s ease;
+}
+
+.sidebar ul li.sidebar_toggle {
+  margin-right: 20px;
+}
+
+.sidebar ul li .sidebar_menu-icon {
+  padding-left: 10px;
+}
+
+.sidebar ul li.sidebar_toggle {
+  height: 48px;
+}
+
+.sidebar ul li .sidebar_menu-text {
+  position: relative;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  transition: 0.25s ease;
+}
+
+.sidebar ul li:hover .sidebar_menu-icon,
+.sidebar ul li:hover .sidebar_menu-text {
+  color: var(--bg);
+}
+
+.sidebar ul li .active-link {
+  background-color: #fafafa;
+  color: #224;
+  border-radius: 50px 0 0 50px;
+}
+
+.sidebar ul li .active-link::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 0;
+  top: -20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 5px 5px 0 5px #fafafa;
+}
+.sidebar ul li .active-link::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 0;
+  bottom: -20px;
+  border-top-right-radius: 20px;
+  box-shadow: 5px -5px 0 5px #fafafa;
+}
+
+.sidebar ul li .active-link .sidebar_menu-text {
+  color: var(--bg);
+}
+
+.sidebar ul li .active-link .sidebar_menu-icon {
+  color: #222;
+}
+
+.sidebar ul li .active-link .sidebar_menu-icon * {
+  z-index: 2;
+}
+
+.sidebar ul li .active-link .sidebar_menu-icon::before {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  width: 60px;
+  background-color: var(--bg);
+  border-radius: 50%;
+  z-index: 1;
+}

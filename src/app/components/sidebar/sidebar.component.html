@@ -1,0 +1,64 @@
+<aside class="sidebar" [ngClass]="sidebarActive()">
+  <ul>
+    <li class="sidebar_toggle" (click)="toggleMenu()">
+      <mat-icon class="material-symbols-rounded">menu</mat-icon>
+    </li>
+    <li class="logo">
+      <a routerLink="dashboard">
+        <img src="/assets/logo.png" alt="Logo">
+      </a>
+    </li>
+    <div class="sidebar_menu">
+      <li style="--bg:#ffa600">
+        <a routerLink="dashboard" routerLinkActive="active-link">
+          <div class="sidebar_menu-icon">
+            <mat-icon class="material-symbols-rounded">dashboard</mat-icon>
+          </div>
+          <div class="sidebar_menu-text">
+            Dashboard
+          </div>
+        </a>
+      </li>
+      <li style="--bg:#ff7668">
+        <a routerLink="buy-sell" routerLinkActive="active-link">
+          <div class="sidebar_menu-icon">
+            <mat-icon class="material-symbols-rounded">sell</mat-icon>
+          </div>
+          <div class="sidebar_menu-text">
+            Buy / Sell
+          </div>
+        </a>
+      </li>
+      <li style="--bg:#ff6ab7">
+        <a routerLink="transactions" routerLinkActive="active-link">
+          <div class="sidebar_menu-icon">
+            <mat-icon class="material-symbols-rounded">currency_exchange</mat-icon>
+          </div>
+          <div class="sidebar_menu-text">
+            Transactions
+          </div>
+        </a>
+      </li>
+      <li style="--bg:#bc83ee">
+        <a routerLink="exchange" routerLinkActive="active-link">
+          <div class="sidebar_menu-icon">
+            <mat-icon class="material-symbols-rounded">sync</mat-icon>
+          </div>
+          <div class="sidebar_menu-text">
+            Exchange
+          </div>
+        </a>
+      </li>
+      <li style="--bg:#2196f3">
+        <a routerLink="tools" routerLinkActive="active-link">
+          <div class="sidebar_menu-icon">
+            <mat-icon class="material-symbols-rounded">settings</mat-icon>
+          </div>
+          <div class="sidebar_menu-text">
+            Tools
+          </div>
+        </a>
+      </li>
+    </div>
+  </ul>
+</aside>
