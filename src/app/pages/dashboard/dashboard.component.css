@@ -35,3 +35,81 @@
   display: flex;
   flex-flow: row nowrap;
 }
+
+.content_cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content_cards-impression {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 250px;
+  overflow: hidden;
+}
+
+.content_cards-inline {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  white-space: nowrap;
+}
+
+.content_cards-impression button {
+  background-color: #814cff33;
+  color: #814cff;
+  padding: 7px 10px;
+  margin: 10px;
+  margin-top: 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.content_cards-impression button.active-mode {
+  background-color: #814cff;
+  color: #fafafa;
+  box-shadow: 0 5px 5px #814cff33;
+}
+
+.content_cards-impression button:last-of-type {
+  margin-right: 0;
+}
+
+.content_cards-impression canvas {
+  position: relative;
+  height: 200px;
+}
+
+.content_cards-value {
+  font-size: 24px;
+  margin: 10px 0;
+  display: flex;
+  min-width: 150px;
+}
+.content_cards-value span {
+  color: #778;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.content_cards-converted {
+  font-size: 14px;
+  color: #778;
+}
+
+.content_cards-coin {
+  position: relative;
+}
+.content_cards-growth {
+  color: #58e036;
+  font-weight: 500;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+}

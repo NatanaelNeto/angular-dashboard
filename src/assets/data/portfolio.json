@@ -1,0 +1,29 @@
+{
+  "portfolio": [
+    {
+      "coin": "BTC",
+      "value": 0.7436,
+      "usd": 21785.92
+    },
+    {
+      "coin": "ETC",
+      "value": 3.1983,
+      "usd": 59.17
+    },
+    {
+      "coin": "LTC",
+      "value": 1.1093,
+      "usd": 101.32
+    },
+    {
+      "coin": "STRAT",
+      "value": 10.9896,
+      "usd": 0.45
+    },
+    {
+      "coin": "XRP",
+      "value": 2.0121,
+      "usd": 1.43
+    }
+  ]
+}

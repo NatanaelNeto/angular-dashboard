@@ -17,8 +17,16 @@
   border: 1px solid #ddd;
 }
 
+.content section:first-child {
+  border-top: none;
+}
+
+.content section:last-child {
+  border-bottom: none;
+}
+
 .content_page-title span {
-  color: #556;
+  color: #778;
   font-size: 14px;
 }
 

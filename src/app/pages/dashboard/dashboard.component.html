@@ -22,4 +22,57 @@
       <app-coin-card drag-scroll-item *ngFor="let coin of cryptoList; let i = index" [index]="i" [coin]="coin"></app-coin-card>
     </drag-scroll>
   </section>
+  <section class="content_section content_cards">
+    <app-card>
+      <div class="content_cards-impression">
+        <div class="content_cards-inline">
+          <h3>Impression</h3>
+          <div>
+            <button
+              [ngClass]="impressionMode('Weekly')"
+              (click)="setMode('Weekly'); drawImpression('weekly')"
+            >
+              Weekly
+            </button>
+            <button
+              [ngClass]="impressionMode('Monthly')"
+              (click)="setMode('Monthly'); drawImpression('monthly')"
+            >
+              Monthly
+            </button>
+          </div>
+        </div>
+        <div class="content_cards-inline" style="height: 200px; width: 100%;">
+          <canvas id="impressionCanvas"></canvas>
+        </div>
+      </div>
+    </app-card>
+    <app-card>
+      <h3>Activity</h3>
+    </app-card>
+    <app-card>
+      <div class="content_cards-coin">
+        <div class="content_cards-inline">
+          <div>
+            <h3>{{ currentCoin.name }}</h3>
+            <p class="content_cards-value">
+              {{portValue(currentCoin.shortname)}} <span>{{currentCoin.shortname}}</span>
+            </p>
+            <p class="content_cards-converted">
+              $ {{portConverted(currentCoin.shortname)}} USD
+            </p>
+          </div>
+          <div class="content_cards-inline" style="height: 100px; width: 100%;">
+            <canvas id="coinCanvas"></canvas>
+          </div>
+        </div>
+        <div class="content_cards-growth">
+          <mat-icon class="material-symbols-rounded">arrow_drop_up</mat-icon> +1.5
+        </div>
+      </div>
+    </app-card>
+    <app-card>
+      <h3>Your Portfolio</h3>
+    </app-card>
+  </section>
 </section>
