@@ -2,6 +2,11 @@
 
 Projeto criado por Natanael Neto para teste técnico da SA Esportes.
 
+## Instruções
+
+- Fazer o download do projeto;
+- Abrir o terminal na pasta do projeto e rodar os comandos `npm install` e `ng serve`;
+
 ## Observações importantes
 
 - Como o teste não pedia ou não mostrava as demais páginas e funcionalidades do dashboard, as funcionalidades exibidas no projeto foram de autoria própria;
