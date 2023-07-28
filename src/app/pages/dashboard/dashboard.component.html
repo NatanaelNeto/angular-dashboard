@@ -22,4 +22,102 @@
       <app-coin-card drag-scroll-item *ngFor="let coin of cryptoList; let i = index" [index]="i" [coin]="coin"></app-coin-card>
     </drag-scroll>
   </section>
+  <section class="content_section content_cards">
+    <app-card>
+      <div class="content_cards-impression">
+        <div class="content_cards-inline">
+          <h3>Impression</h3>
+          <div>
+            <button
+              [ngClass]="impressionMode('Weekly')"
+              (click)="setMode('Weekly'); drawImpression('weekly')"
+            >
+              Weekly
+            </button>
+            <button
+              [ngClass]="impressionMode('Monthly')"
+              (click)="setMode('Monthly'); drawImpression('monthly')"
+            >
+              Monthly
+            </button>
+          </div>
+        </div>
+        <div class="content_cards-inline impression-canvas">
+          <canvas id="impressionCanvas"></canvas>
+        </div>
+      </div>
+    </app-card>
+    <app-card>
+      <div class="content_cards-activity">
+        <h3>Activity</h3>
+        <div class="content_cards-act" style="--color: #bc83ee">
+          <div class="act-content">
+            <i class="cc BTC-alt"></i>
+            <div class="act-description">
+              <p>Sent Bitcoin</p>
+              <p class="act-adress">To Bitcoin Adress</p>
+            </div>
+          </div>
+          <div class="act-value">
+            <p>-0.000257 BTC</p>
+            <mat-icon class="material-symbols-rounded act-subtract">arrow_upward</mat-icon>
+          </div>
+        </div>
+        <div class="content_cards-act" style="--color: #2196f3">
+          <div class="act-content">
+            <i class="cc LTC-alt"></i>
+            <div class="act-description">
+              <p>Received Litecoin</p>
+              <p class="act-adress">Pending</p>
+            </div>
+          </div>
+          <div class="act-value">
+            <p>0.0133843 LTC</p>
+            <mat-icon class="material-symbols-rounded act-add">arrow_downward</mat-icon>
+          </div>
+        </div>
+      </div>
+    </app-card>
+    <app-card>
+      <div class="content_cards-coin">
+        <div class="content_cards-inline">
+          <div>
+            <h3>{{ currentCoin.name }}</h3>
+            <p class="content_cards-value">
+              {{portValue(currentCoin.shortname)}} <span>{{currentCoin.shortname}}</span>
+            </p>
+            <p class="content_cards-converted">
+              $ {{portConverted(currentCoin.shortname)}} USD
+            </p>
+          </div>
+          <div class="content_cards-inline coin-canvas">
+            <canvas id="coinCanvas"></canvas>
+          </div>
+        </div>
+        <div class="content_cards-growth">
+          <mat-icon class="material-symbols-rounded">arrow_drop_up</mat-icon> +1.5
+        </div>
+      </div>
+    </app-card>
+    <app-card>
+      <div class="content_cards-portfolio">
+        <div class="content_cards-block">
+          <h3>Your Portfolio</h3>
+          <div>
+            <div class="content_cards-inline port-canvas">
+              <canvas id="portCanvas"></canvas>
+              <div>
+                <p>0.7436 BTC</p>
+                <p>3.1983 ETC</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content_cards-block">
+          <p>$21,948.29</p>
+          <p>Pending Balance</p>
+        </div>
+      </div>
+    </app-card>
+  </section>
 </section>

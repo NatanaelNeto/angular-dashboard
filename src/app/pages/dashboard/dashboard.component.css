@@ -35,3 +35,201 @@
   display: flex;
   flex-flow: row nowrap;
 }
+
+.content_cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content_cards-impression,
+.content_cards-coin {
+  padding: 20px;
+}
+
+.content_cards-impression {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 250px;
+  overflow: hidden;
+}
+
+.content_cards-inline {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.content_cards-impression button {
+  background-color: #814cff33;
+  color: #814cff;
+  padding: 7px 10px;
+  margin: 10px;
+  margin-top: 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.content_cards-impression button.active-mode {
+  background-color: #814cff;
+  color: #fafafa;
+  box-shadow: 0 5px 5px #814cff33;
+}
+
+.content_cards-impression button:last-of-type {
+  margin-right: 0;
+}
+
+.impression-canvas {
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.port-canvas {
+  height: 70px;
+  width: 70px;
+}
+
+.content_cards-value {
+  font-size: 24px;
+  margin: 10px 0;
+  display: flex;
+  min-width: 150px;
+}
+.content_cards-value span {
+  color: #778;
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.content_cards-converted {
+  font-size: 14px;
+  color: #778;
+}
+
+.content_cards-coin {
+  position: relative;
+}
+
+.coin-canvas {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.content_cards-growth {
+  color: #58e036;
+  font-weight: 500;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.content_cards-activity {
+  height: 250px;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 20px 0;
+}
+
+.content_cards-activity h3 {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.content_cards-act {
+  display: flex;
+  flex-flow: row;
+  flex: 1 1 auto;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
+  transition: 0.2s ease;
+}
+
+.content_cards-act:hover {
+  box-shadow: 0px 0px 10px color-mix(in srgb, var(--color) 15%, #000 15%);
+}
+
+.content_cards-act i {
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  margin-right: 20px;
+  background-color: color-mix(in srgb, var(--color) 40%, #fff 50%);
+}
+
+.content_cards-act .act-description .act-adress {
+  font-size: 14px;
+  color: #778;
+}
+
+.act-content {
+  display: flex;
+}
+
+.act-value {
+  display: flex;
+}
+.act-value * {
+  margin: 5px;
+  font-weight: 500;
+  color: #334;
+}
+
+.act-value .act-subtract {
+  color: #eb3f3f;
+}
+
+.act-value .act-add {
+  color: #58e036;
+}
+
+.content_cards-portfolio {
+  display: flex;
+  height: 150px;
+}
+
+.content_cards-portfolio .content_cards-block {
+  width: 50%;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 20px;
+}
+
+.content_cards-portfolio .content_cards-block:last-child {
+  border-left: 1px solid #ddd;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.content_cards-portfolio .content_cards-block:last-child p {
+  font-weight: 500;
+  font-size: 24px;
+}
+.content_cards-portfolio .content_cards-block:last-child p:last-child {
+  font-size: 14px;
+  color: #778;
+}
+
+.content_cards-block .content_cards-inline {
+  align-items: center;
+  padding-top: 10px;
+  white-space: nowrap;
+}
+
+.content_cards-block div {
+  margin-left: 20px;
+  color: #778;
+}
