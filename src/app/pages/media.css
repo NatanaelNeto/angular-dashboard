@@ -1,0 +1,93 @@
+@media only screen and (max-width: 1539px) {
+  .coin-card {
+    width: 200px;
+    height: 125px;
+    padding: 10px;
+  }
+
+  .content .content_section:first-child {
+    padding-bottom: 0;
+    padding-top: 20px;
+    align-items: start !important;
+    min-height: auto;
+    height: 90px;
+  }
+
+  .content_section .content_page-title,
+  .content_section .content_menu-crypto{
+    height: 50px;
+  }
+
+  .coin-card p {
+    font-size: 18px;
+  }
+
+  .coin-card p.coin-card_content-cap {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  .coin-card img.card_background {
+    bottom: 10px;
+  }
+
+.coin-card_content-value {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+  .card {
+    width: 30vw;
+    margin: 10px;
+    margin-bottom: 0;
+  }
+
+  .content_cards-impression {
+    height: 175px;
+  }
+  .content_cards-impression .impression-canvas {
+    height: 110px;
+  }
+
+  .content_cards-activity {
+    height: 175px;
+  }
+
+  .content_cards-activity h3 {
+    margin-bottom: 0;
+  }
+
+  .content_cards-activity .content_cards-act p {
+    font-size: 16px;
+  }
+  .content_cards-activity .content_cards-act p.act-adress {
+    font-size: 12px;
+  }
+
+  .content_section.content_carrousel {
+    padding: 0 !important;
+    padding-left: 40px !important;
+  }
+
+  .content_cards-coin,
+  .content_cards-portfolio {
+    height: 120px;
+  }
+
+  .content_cards-coin .content_cards-growth {
+    bottom: 10px;
+  }
+
+  .content_cards-portfolio .port-canvas {
+    height: 50px;
+    width: 50px;
+    margin-left: -20px;
+  }
+
+  .content_cards-portfolio .content_cards-block:last-child {
+    padding-top: 0;
+  }
+}
