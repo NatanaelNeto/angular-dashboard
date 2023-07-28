@@ -4,7 +4,7 @@ import Cryptocoin from 'src/app/utils/Cryptocoin';
 @Component({
   selector: 'app-coin-card',
   templateUrl: './coin-card.component.html',
-  styleUrls: ['./coin-card.component.css']
+  styleUrls: ['./coin-card.component.css', '../../pages/media.css']
 })
 export class CoinCardComponent {
 

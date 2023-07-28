@@ -7,7 +7,7 @@ import Chart from 'chart.js/auto';
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css', '../pages.css']
+  styleUrls: ['./dashboard.component.css', '../pages.css', '../media.css']
 })
 export class DashboardComponent implements OnInit {
 
@@ -47,6 +47,7 @@ export class DashboardComponent implements OnInit {
     this.service.getPortfolio().subscribe((portfolio) => {
       this.portfolio = portfolio.portfolio;
       this.drawCoin(this.currentCoin.color);
+      this.drawPort();
     });
   }
 
@@ -107,7 +108,7 @@ export class DashboardComponent implements OnInit {
           bar: {
             borderRadius: 10,
             backgroundColor: '#814cff',
-            borderWidth: 5,
+            borderWidth: window.innerWidth > 1539 ? 5: 2,
             borderColor: '#00000000'
           }
         },
@@ -177,6 +178,58 @@ export class DashboardComponent implements OnInit {
         },
         scales: {
           x: {
+            title: {
+              display: false
+            },
+            grid: {
+              display: false,
+            }
+          },
+          y: {
+            display: false,
+            title: {
+              display: false
+            },
+            grid: {
+              display: false,
+            }
+          }
+        }
+      }
+    });
+  }
+
+  drawPort() {
+    const info = this.portfolio.map((coin) => coin.value);
+    console.log(info);
+    const canvas: HTMLCanvasElement =  document.querySelector<HTMLCanvasElement>('#portCanvas')!;
+    new Chart(canvas, {
+      type: 'doughnut',
+      data: {
+        labels: ['', '', '', '', ''],
+        datasets: [
+          {
+            data: info,
+            backgroundColor: [
+              '#bc83ee',
+              '#ff7668',
+              '#2196f3',
+              '#0abb55',
+              '#ffa600'
+            ],
+          }
+        ]
+      },
+      options: {
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            display: false,
+          }
+        },
+        scales: {
+          x: {
+            display: false,
             title: {
               display: false
             },
