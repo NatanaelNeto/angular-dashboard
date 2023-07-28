@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DashboardService } from '../dashboard.service';
 import Cryptocoin from 'src/app/utils/Cryptocoin';
+import { SidebarService } from 'src/app/components/sidebar.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -13,7 +14,7 @@ export class DashboardComponent implements OnInit {
 
   currentCoin: string = 'Bitcoin';
 
-  constructor (private service: DashboardService) { }
+  constructor (private service: DashboardService, private sidebarService: SidebarService) { }
 
   ngOnInit(): void {
     this.service.getCryptos().subscribe((list) => {
@@ -33,5 +34,11 @@ export class DashboardComponent implements OnInit {
 
   setActive(coin: string) {
     this.currentCoin  = coin;
+  }
+
+  sidebar(): string {
+    return this.sidebarService.getActive()
+      ? ''
+      : 'sidebar-closed';
   }
 }
