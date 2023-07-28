@@ -1,0 +1,37 @@
+.content_menu-crypto ul {
+  display: flex;
+}
+
+.content_menu-crypto ul li {
+  position: relative;
+  list-style: none;
+  padding: 5px;
+  height: 40px;
+  width: 40px;
+  margin: 5px 15px;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  background-color: color-mix(in srgb, var(--icon-color) 25%, #fff 90%);
+}
+
+.content_menu-crypto ul li.active-coin::after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  border-radius: 5px 5px 0 0;
+  background-color: var(--icon-color);
+  bottom: -25px;
+}
+
+.content_menu-crypto ul li i {
+  color: var(--icon-color);
+  font-size: 18px;
+}
+
+.content_cryptocards {
+  display: flex;
+  flex-flow: row nowrap;
+}

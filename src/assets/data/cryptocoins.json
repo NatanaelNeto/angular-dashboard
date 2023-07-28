@@ -1,0 +1,49 @@
+{
+  "coins": [
+    {
+      "name": "Bitcoin",
+      "shortname": "BTC",
+      "icon": "BTC-alt",
+      "value": 29477.10,
+      "cap": 572.8,
+      "img": "/assets/btc.png",
+      "color": "#bc83ee"
+    },
+    {
+      "name": "Ethereum Classic",
+      "shortname": "ETC",
+      "icon": "ETC",
+      "value": 18.30,
+      "cap": 2.6,
+      "img": "/assets/etc.png",
+      "color": "#ff7668"
+    },
+    {
+      "name": "Litecoin",
+      "shortname": "LTC",
+      "icon": "LTC-alt",
+      "value": 91.26,
+      "cap": 6.7,
+      "img": "/assets/ltc.png",
+      "color": "#2196f3"
+    },
+    {
+      "name": "Stratis",
+      "shortname": "STRAT",
+      "icon": "STRAT",
+      "value": 0.47,
+      "cap": 10.9,
+      "img": "/assets/strat.png",
+      "color": "#0abb55"
+    },
+    {
+      "name": "XRP",
+      "shortname": "XRP",
+      "icon": "XRP-alt",
+      "value": 0.71,
+      "cap": 0.07,
+      "img": "/assets/xrp.png",
+      "color": "#ffa600"
+    }
+  ]
+}

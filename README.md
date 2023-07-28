@@ -1,4 +1,4 @@
-# Dashboard
+# Angular Dashboard
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
 
@@ -28,5 +28,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Conteúdos auxiliares
 
-- Estilo do menu sidebar: disponível [aqui](https://www.youtube.com/watch?v=PuLujpkLRUM);
 - Ícones utilizados: [Angular Material Icons](https://material.angular.io/components/icon/overview);
+- Ícones das criptomoedas: [Cryptocoins icons](https://www.npmjs.com/package/cryptocoins-icons)
+- Sistema de carrossel: [Lightweight drag to scroll carousel for Angular](https://morioh.com/p/645309f2530e);
