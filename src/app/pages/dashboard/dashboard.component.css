@@ -30,3 +30,8 @@
   color: var(--icon-color);
   font-size: 18px;
 }
+
+.content_cryptocards {
+  display: flex;
+  flex-flow: row nowrap;
+}

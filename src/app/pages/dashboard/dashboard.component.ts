@@ -11,7 +11,7 @@ export class DashboardComponent implements OnInit {
 
   cryptoList: Cryptocoin[] = [];
 
-  currentCoin: string = '';
+  currentCoin: string = 'Bitcoin';
 
   constructor (private service: DashboardService) { }
 

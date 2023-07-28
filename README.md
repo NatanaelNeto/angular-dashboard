@@ -29,3 +29,5 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Conteúdos auxiliares
 
 - Ícones utilizados: [Angular Material Icons](https://material.angular.io/components/icon/overview);
+- Ícones das criptomoedas: [Cryptocoins icons](https://www.npmjs.com/package/cryptocoins-icons)
+- Sistema de carrossel: [Lightweight drag to scroll carousel for Angular](https://morioh.com/p/645309f2530e);

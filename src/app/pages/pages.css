@@ -21,3 +21,7 @@
   font-weight: 500;
   font-size: 22px;
 }
+
+.content_section.content_carrousel {
+  padding-right: 0 !important;
+}

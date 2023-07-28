@@ -1,0 +1,12 @@
+<div class="card" [ngClass]="'card-' + index">
+  <img [src]="coin.img" [alt]="coin.name" class="card_background">
+  <div class="card_content">
+    <div class="card_content-icon">
+      <i class="cc" [ngClass]="coin.icon"></i>
+    </div>
+    <div class="card_content-text">
+      <p class="card_content-value">${{coin.value | number:'1.2-2'}}</p>
+      <p class="card_content-cap">Market cap: ${{coin.cap | number:'1.2-2'}}B</p>
+    </div>
+  </div>
+</div>

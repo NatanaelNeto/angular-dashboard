@@ -17,7 +17,9 @@
       </ul>
     </div>
   </section>
-  <section class="content_section">
-
+  <section class="content_section content_carrousel">
+    <drag-scroll [scrollbar-hidden]="true" class="content_cryptocards">
+      <app-coin-card drag-scroll-item *ngFor="let coin of cryptoList; let i = index" [index]="i" [coin]="coin"></app-coin-card>
+    </drag-scroll>
   </section>
 </section>
