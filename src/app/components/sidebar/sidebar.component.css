@@ -24,6 +24,8 @@
 .sidebar ul li img {
   width: 260px;
   margin: 0 20px;
+  margin-top: -20px;
+  margin-bottom: 20px;
   opacity: 0;
   transition: 0.2s ease;
 }
@@ -66,7 +68,11 @@
   background-color: #ffffff66;
 }
 
-.sidebar ul li.sidebar_toggle,
+.sidebar_toggle {
+  padding-left: 25px;
+  padding-top: 20px;
+}
+
 .sidebar ul li a .sidebar_menu-icon {
   min-width: 80px;
   height: 60px;

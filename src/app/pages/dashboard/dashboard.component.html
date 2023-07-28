@@ -1,8 +1,23 @@
 <section class="content">
-  <h1>Dashboard Content</h1>
-  <div>
-    <h2>Teste h2</h2>
-    <h3>Teste h3</h3>
-    <p>Teste p</p>
-  </div>
+  <section class="content_section" style="display: flex; align-items: end;">
+    <div class="content_page-title">
+      <p><span>Overview Dashboard</span></p>
+      <p>Trading View</p>
+    </div>
+    <div class="content_menu-crypto">
+      <ul>
+        <li
+          *ngFor="let coin of cryptoList"
+          [style]="'--icon-color:' + coin.color"
+          [ngClass]="isActive(coin.name)"
+          (click)="setActive(coin.name)"
+        >
+          <i class="cc" [ngClass]="coin.icon"></i>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="content_section">
+
+  </section>
 </section>

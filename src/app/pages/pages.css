@@ -1,0 +1,23 @@
+.content {
+  display: flex;
+  flex-flow: column;
+  width: calc(100vw - 300px);
+}
+
+.content section {
+  padding: 20px;
+  padding-left: 60px;
+  overflow: hidden;
+  min-height: 120px;
+  border: 1px solid #ddd;
+}
+
+.content_page-title span {
+  color: #556;
+  font-size: 14px;
+}
+
+.content_page-title p {
+  font-weight: 500;
+  font-size: 22px;
+}
