@@ -1,10 +1,15 @@
 .sidebar {
+  --sun: #eb4;
+  --moon: #53a;
   background-color: #ededed;
   color: #224;
   height: 100vh;
   width: 80px;
   overflow: hidden;
   transition: 0.5s ease-in-out;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
 }
 
 .sidebar.sidebar-active {
@@ -88,9 +93,61 @@
 
 .sidebar ul li:hover a .sidebar_menu-icon,
 .sidebar ul li:hover a .sidebar_menu-text {
-  color: var(--bg);
+  color: var(--bg) !important;
 }
 .sidebar ul li:hover a.active-link .sidebar_menu-icon,
 .sidebar ul li:hover a.active-link .sidebar_menu-text {
-  color: #fafafa;
+  color: #fafafa !important;
+}
+
+.sidebar_darkmode {
+  padding: 40px 0;
+  font-weight: 500;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  border-right: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+.sidebar_darkmode .sun {
+  color: var(--sun);
+  transform: scale(2);
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar_darkmode .moon {
+  color: var(--moon);
+  transform: scale(2);
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar_darkmode-button {
+  height: 40px;
+  width: 70px;
+  border-radius: 20px;
+  margin: 0 10px;
+  position: relative;
+  border: 1px solid var(--sun);
+  background-color: color-mix(in srgb, var(--sun) 40%, #fff 15%);
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.sidebar_darkmode-button::after {
+  transition: 0.5s ease;
+  content: '';
+  height: 32px;
+  width: 32px;
+  position: absolute;
+  background-color: var(--sun);
+  border-radius: 50%;
+  top: 3px;
+  left: 3px;
 }

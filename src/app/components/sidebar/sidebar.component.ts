@@ -20,6 +20,10 @@ export class SidebarComponent implements OnInit {
     this.service.setActive();
   }
 
+  toggleDark() {
+    this.service.toggleDarkMode();
+  }
+
   sidebarActive(): string {
     return this.service.getActive()
       ? 'sidebar-active'

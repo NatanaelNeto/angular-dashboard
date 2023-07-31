@@ -1,5 +1,5 @@
 <main>
-  <div class="app">
+  <div class="app" [ngClass]="isDarkMode()">
     <app-sidebar></app-sidebar>
     <router-outlet></router-outlet>
   </div>

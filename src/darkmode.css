@@ -1,0 +1,49 @@
+.dark {
+  --moon: #53a;
+}
+
+.dark * {
+  border-color: #334 !important;
+}
+
+.dark.app,
+.dark .sidebar_darkmode {
+  background-color: #121212 !important;
+}
+
+.dark .sidebar {
+  background-color: #222 !important;
+}
+
+.dark .sidebar .sidebar_menu-text,
+.dark .sidebar .sidebar_menu-icon,
+.dark .sidebar .sidebar_toggle {
+  color: #fafafa !important;
+}
+
+.dark .sidebar_darkmode-button {
+  border: 1px solid var(--moon) !important;
+  background-color: color-mix(in srgb, var(--moon) 40%, #fff 30%) !important;
+}
+
+.dark .sidebar_darkmode-button::after {
+  background-color: var(--moon) !important;
+  left: 33px !important;
+}
+
+.dark h3, .dark p {
+  color: #fafafa !important;
+}
+
+.dark .act-value,
+.dark .content_cards-block div,
+.dark .content_cards-converted,
+.dark .content_cards-value span,
+.dark .act-description .act-adress,
+.dark .content_cards-block:last-child p:last-child {
+  color: #aaa !important;
+}
+
+.dark .card {
+  background-color: #334 !important;
+}

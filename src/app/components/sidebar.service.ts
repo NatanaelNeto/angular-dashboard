@@ -6,6 +6,8 @@ import { Observable } from 'rxjs';
 })
 export class SidebarService {
   private isActive: Boolean = true;
+
+  private darkmode: Boolean = false;
   constructor() { }
 
   setActive() {
@@ -14,5 +16,13 @@ export class SidebarService {
 
   getActive(): Boolean {
     return this.isActive;
+  }
+
+  toggleDarkMode() {
+    this.darkmode = !this.darkmode;
+  }
+
+  isDarkMode(): Boolean {
+    return this.darkmode;
   }
 }
