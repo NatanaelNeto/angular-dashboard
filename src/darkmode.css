@@ -31,6 +31,12 @@
   left: 33px !important;
 }
 
+@media only screen and (max-width: 1539px) {
+  .dark .sidebar_darkmode-button::after {
+    left: 30px !important;
+  }
+}
+
 .dark h3, .dark p {
   color: #fafafa !important;
 }

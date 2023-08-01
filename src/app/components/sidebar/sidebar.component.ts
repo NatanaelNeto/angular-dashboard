@@ -4,7 +4,7 @@ import { SidebarService } from '../sidebar.service';
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css']
+  styleUrls: ['./sidebar.component.css', '../../pages/media.css']
 })
 export class SidebarComponent implements OnInit {
 
@@ -18,15 +18,18 @@ export class SidebarComponent implements OnInit {
 
   toggleMenu() {
     this.service.setActive();
+    this.isActive = this.service.getActive();
   }
 
   toggleDark() {
     this.service.toggleDarkMode();
   }
 
-  sidebarActive(): string {
-    return this.service.getActive()
-      ? 'sidebar-active'
-      : '';
+  sidebarActive(): Boolean {
+    return this.service.getActive();
+  }
+
+  darkmode(): Boolean {
+    return this.service.isDarkMode();
   }
 }
