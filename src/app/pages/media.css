@@ -1,4 +1,3 @@
-
 @media only screen and (min-width: 1173px) {
   .hide-on-m-and-l {
     display: none !important;
@@ -154,12 +153,14 @@
   }
 }
 
-@media only screen and (max-width: 1172px) {
-  .show-only-l {
+@media only screen and (max-width: 1172px) and (min-width: 801px) {
+  .hide-on-s {
     display: none !important;
   }
+}
 
-  .hide-on-s {
+@media only screen and (max-width: 1172px) {
+  .show-only-l {
     display: none !important;
   }
 
@@ -418,5 +419,113 @@
   }
   .content_cards-portfolio .content_cards-block .port-canvas {
     height: 40px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hide-on-xs {
+    display: none !important;
+  }
+
+  .app {
+    overflow-y: scroll !important;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 5px 0 5px #02020233;
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+  }
+
+  .content {
+    width: calc(100vw - 60px);
+  }
+
+
+  .content_section.content_carrousel-xs {
+    padding-right: 0 !important;
+  }
+
+  .coin-card {
+    width: 300px;
+    margin: 20px 10px;
+    height: 175px;
+    padding: 20px;
+  }
+
+  .coin-card .coin-card_content-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .coin-card .coin-card_content-icon i {
+    font-size: 24px;
+  }
+
+  .coin-card p.coin-card_content-value {
+    font-size: 32px;
+  }
+
+  .coin-card p.coin-card_content-cap {
+    font-size: 18px;
+  }
+
+  .card {
+    width: 300px;
+  }
+
+  .content_cards-impression,
+  .content_cards-activity {
+    height: 180px;
+  }
+
+  .content_cards-coin {
+    height: 160px;
+  }
+
+  .content_cards-coin .content_cards-growth {
+    top: 48px;
+    right: 12px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+
+  .content_menu-crypto-xs ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+
+  .content_menu-crypto-xs ul li {
+    list-style: none;
+    background-color: color-mix(in srgb, var(--icon-color) 10%, #ffffff00 30%);
+    color: var(--icon-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+  }
+
+  .content_menu-crypto-xs ul li.active-coin{
+    background-color: color-mix(in srgb, var(--icon-color) 50%, #ffffff00 30%);
+  }
+
+  .content_cards-portfolio {
+    margin-bottom: 10px;
+  }
+  .content_cards-portfolio .port-canvas {
+    height: 60px !important;
+    padding-left: 10px;
+  }
+  .content_cards-portfolio .port-canvas div {
+    margin-left: 10px !important;
   }
 }

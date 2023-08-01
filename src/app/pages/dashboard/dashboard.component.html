@@ -4,7 +4,7 @@
       <p><span>Overview Dashboard</span></p>
       <p>Trading View</p>
     </div>
-    <div class="content_menu-crypto">
+    <div class="content_menu-crypto hide-on-xs">
       <ul>
         <li
           *ngFor="let coin of cryptoList"
@@ -17,8 +17,14 @@
       </ul>
     </div>
   </section>
-  <section class="content_section content_carrousel">
+  <section class="content_section content_carrousel hide-on-xs">
     <drag-scroll style="height: 100%; overflow: auto;" [scrollbar-hidden]="true" class="content_cryptocards">
+      <app-coin-card drag-scroll-item *ngFor="let coin of cryptoList; let i = index" [index]="i" [coin]="coin"></app-coin-card>
+    </drag-scroll>
+  </section>
+
+  <section class="content_section content_carrousel-xs hide-on-m-and-l hide-on-s">
+    <drag-scroll [snap-duration]="300">
       <app-coin-card drag-scroll-item *ngFor="let coin of cryptoList; let i = index" [index]="i" [coin]="coin"></app-coin-card>
     </drag-scroll>
   </section>
@@ -93,6 +99,18 @@
           <div class="content_cards-inline coin-canvas">
             <canvas id="coinCanvas"></canvas>
           </div>
+        </div>
+        <div class="content_menu-crypto-xs hide-on-m-and-l hide-on-s">
+          <ul>
+            <li
+              *ngFor="let coin of cryptoList"
+              [style]="'--icon-color:' + coin.color"
+              [ngClass]="isActive(coin.name)"
+              (click)="setActive(coin.name)"
+            >
+              <i class="cc" [ngClass]="coin.icon"></i>
+            </li>
+          </ul>
         </div>
         <div class="content_cards-growth">
           <mat-icon class="material-symbols-rounded">arrow_drop_up</mat-icon> +1.5

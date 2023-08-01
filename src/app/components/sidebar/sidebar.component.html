@@ -1,4 +1,8 @@
-<aside class="sidebar" [ngClass]="sidebarActive() ? 'sidebar-active' : ''">
+<aside
+  class="sidebar"
+  [ngClass]="sidebarActive() ? 'sidebar-active' : ''"
+  [ngStyle]="mobileVH()"
+>
   <ul>
     <li class="sidebar_toggle sidebar_small-logo" (click)="toggleMenu()">
       <mat-icon class="material-symbols-rounded">menu</mat-icon>
@@ -6,7 +10,7 @@
         <img src="/assets/logo.png" alt="Logo">
       </a>
     </li>
-    <li class="logo hide-on-s">
+    <li class="logo hide-on-s hide-on-xs">
       <a routerLink="dashboard">
         <img src="/assets/logo.png" alt="Logo">
       </a>
@@ -65,7 +69,7 @@
     </div>
   </ul>
 
-  <div class="sidebar_darkmode" [ngClass]="isActive ? '' : 'hide-on-disabled_sidebar'">
+  <div class="sidebar_darkmode" [ngClass]="sidebarActive() ? '' : 'hide-on-disabled_sidebar'">
     <div class="sun">
       <mat-icon class="material-symbols-rounded">light_mode</mat-icon>
     </div>
@@ -83,7 +87,7 @@
     </div>
   </div>
 
-  <div class="sidebar_darkmode dark-button" [ngClass]="isActive ? 'hide-on-disabled_sidebar' : ''">
+  <div class="sidebar_darkmode dark-button" [ngClass]="sidebarActive() ? 'hide-on-disabled_sidebar' : ''">
     <button (click)="toggleDark()">
       <div class="sun" *ngIf="!darkmode()">
         <mat-icon class="material-symbols-rounded">light_mode</mat-icon>
@@ -101,4 +105,6 @@
       </div>
     </button>
   </div>
+  <script defer>
+  </script>
 </aside>

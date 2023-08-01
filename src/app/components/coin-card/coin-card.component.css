@@ -62,6 +62,7 @@
   justify-content: center;
   align-items: center;
   background-color: #ffffff33;
+  position: relative;
 }
 
 .coin-card_content-value {
@@ -72,4 +73,9 @@
 .coin-card_content-cap {
   font-size: 18px;
   font-weight: 300;
+}
+
+.coin-card_content-coin {
+  position: absolute;
+  left: 50px;
 }
