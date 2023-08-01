@@ -21,6 +21,14 @@
   width: 300px;
 }
 
+.sidebar .sidebar_menu {
+  width: 80px;
+}
+
+.sidebar.sidebar-active .sidebar_menu {
+  width: 300px;
+}
+
 .sidebar ul {
   padding: 0;
 }
@@ -181,4 +189,10 @@
 .sidebar_darkmode.dark-button .moon {
   transform: scale(1.2);
   margin: 0;
+}
+
+.sidebar_small-logo {
+  display: flex;
+  align-items: center;
+  padding-top: 0;
 }

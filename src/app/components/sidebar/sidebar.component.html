@@ -1,9 +1,12 @@
 <aside class="sidebar" [ngClass]="sidebarActive() ? 'sidebar-active' : ''">
   <ul>
-    <li class="sidebar_toggle" (click)="toggleMenu()">
+    <li class="sidebar_toggle sidebar_small-logo" (click)="toggleMenu()">
       <mat-icon class="material-symbols-rounded">menu</mat-icon>
+      <a class="hide-on-m-and-l">
+        <img src="/assets/logo.png" alt="Logo">
+      </a>
     </li>
-    <li class="logo">
+    <li class="logo hide-on-s">
       <a routerLink="dashboard">
         <img src="/assets/logo.png" alt="Logo">
       </a>

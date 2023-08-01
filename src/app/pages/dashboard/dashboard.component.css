@@ -180,6 +180,7 @@
 
 .act-value {
   display: flex;
+  align-items: center;
 }
 .act-value * {
   margin: 5px;
