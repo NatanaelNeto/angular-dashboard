@@ -3,6 +3,7 @@
   <div class="coin-card_content">
     <div class="coin-card_content-icon">
       <i class="cc" [ngClass]="coin.icon"></i>
+      <p class="coin-card_content-coin hide-on-m-and-l hide-on-s">{{coin.name}}</p>
     </div>
     <div class="coin-card_content-text">
       <p class="coin-card_content-value">${{coin.value | number:'1.2-2'}}</p>

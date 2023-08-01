@@ -1,4 +1,18 @@
+@media only screen and (min-width: 1173px) {
+  .hide-on-m-and-l {
+    display: none !important;
+  }
+
+  .sidebar .sidebar_toggle {
+    padding-top: 20px;
+  }
+}
+
 @media only screen and (max-width: 1539px) {
+  .show-only-l {
+    display: none !important;
+  }
+
   .coin-card {
     width: 200px;
     height: 125px;
@@ -11,6 +25,10 @@
     align-items: start !important;
     min-height: auto;
     height: 90px;
+  }
+
+  section.content_section.content_cards {
+    padding: 20px 40px;
   }
 
   .content_section .content_page-title,
@@ -34,13 +52,13 @@
     bottom: 10px;
   }
 
-.coin-card_content-value {
-  font-size: 24px;
-  margin-top: 10px;
-}
+  .coin-card_content-value {
+    font-size: 24px;
+    margin-top: 10px;
+  }
 
   .card {
-    width: 30vw;
+    width: 32vw;
     margin: 10px;
     margin-bottom: 0;
   }
@@ -63,8 +81,17 @@
   .content_cards-activity .content_cards-act p {
     font-size: 16px;
   }
+
+  .content_cards-activity .content_cards-act .act-value p {
+    font-size: 12px;
+  }
+
   .content_cards-activity .content_cards-act p.act-adress {
     font-size: 12px;
+  }
+
+  .content_cards-act i {
+    margin-right: 10px;
   }
 
   .content_section.content_carrousel {
@@ -75,6 +102,7 @@
   .content_cards-coin,
   .content_cards-portfolio {
     height: 120px;
+    overflow: hidden;
   }
 
   .content_cards-coin .content_cards-growth {
@@ -89,5 +117,415 @@
 
   .content_cards-portfolio .content_cards-block:last-child {
     padding-top: 0;
+  }
+
+  .content_cards-block div {
+    margin-left: 10px;
+  }
+
+  .content_cards-block div p {
+    font-size: 14px;
+  }
+
+  .sidebar ul div.sidebar_menu li {
+    margin: 0;
+  }
+
+  .sidebar_darkmode {
+    height: auto;
+    padding: 20px;
+  }
+
+  .sidebar_darkmode .sun, .sidebar_darkmode .moon {
+    transform: none;
+  }
+
+  .sidebar_darkmode-button {
+    height: 20px;
+    width: 50px;
+  }
+
+  .sidebar_darkmode-button::after {
+    height: 16px;
+    width: 16px;
+    top: 1px;
+    left: 1px;
+  }
+}
+
+@media only screen and (max-width: 1172px) and (min-width: 801px) {
+  .hide-on-s {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 1172px) {
+  .show-only-l {
+    display: none !important;
+  }
+
+  .sidebar {
+    width: 60px;
+  }
+
+  .sidebar.sidebar-active {
+    width: 200px;
+  }
+
+  .sidebar .sidebar_menu {
+    width: 60px;
+  }
+
+  .sidebar.sidebar-active .sidebar_menu {
+    width: 200px;
+  }
+
+  .sidebar_toggle {
+    padding-bottom: 0;
+    padding-left: 20px;
+  }
+
+  .sidebar ul li {
+    margin-bottom: 0;
+  }
+
+  .sidebar_menu li a {
+    height: 35px;
+    margin-bottom: 5px;
+    border-radius: 0 10px 10px 0;
+    font-size: 14px !important;
+  }
+
+  .sidebar_menu li a .sidebar_menu-icon {
+    min-width: 60px !important;
+    width: 60px;
+    height: 40px !important;
+  }
+
+  .sidebar_menu li a .sidebar_menu-icon * {
+    font-size: 18px;
+    transform: translate(3px, 3px);
+  }
+
+  .sidebar ul li a.active-link .sidebar_menu-icon::after {
+    right: 20px;
+    width: 12px;
+    height: 12px;
+  }
+
+  .sidebar ul > li:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    z-index: 2;
+  }
+
+  .sidebar ul li img {
+    height: 60px;
+    width: auto;
+    margin: 10px;
+    padding-left: 0;
+  }
+
+  .sidebar_darkmode.dark-button {
+    padding: 2px 20px;
+  }
+
+  .content {
+    width: calc(100vw - 200px);
+  }
+
+  .content.sidebar-closed {
+    width: calc(100vw - 60px);
+  }
+
+  .content.sidebar-closed .content_section.content_cards {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .content .content_section {
+    padding-left: 20px;
+  }
+
+  .content .content_section:nth-child(1) {
+    height: 60px;
+    padding-top: 5px;
+  }
+
+  .content .content_section .content_page-title p {
+    font-size: 18px;
+  }
+  .content .content_section .content_page-title p span {
+    font-size: 10px;
+  }
+
+  .content_menu-crypto ul li {
+    height: 32px;
+    width: 32px;
+    margin-top: 10px;
+  }
+
+  .content_menu-crypto ul li i {
+    font-size: 14px;
+  }
+
+  .content_menu-crypto ul li.active-coin::after {
+    bottom: -12px;
+  }
+
+  .content .content_section.content_carrousel {
+    padding-left: 20px !important;
+  }
+
+  .coin-card {
+    height: 80px;
+    width: 140px;
+    padding: 5px;
+  }
+
+  .coin-card .coin-card_content-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .coin-card .coin-card_content-icon i {
+    font-size: 12px;
+  }
+
+  .coin-card p.coin-card_content-value {
+    font-size: 14px;
+  }
+
+  .coin-card p.coin-card_content-cap {
+    font-size: 10px;
+  }
+
+  .content .content_cards {
+    padding: 0;
+  }
+
+  .card {
+    width: 28vw;
+    padding: 0;
+  }
+
+  .content_cards-impression,
+  .content_cards-activity,
+  .content_cards-coin,
+  .content_cards-portfolio {
+    padding: 10px;
+  }
+
+  .content_cards-coin,
+  .content_cards-portfolio {
+    height: 100px;
+  }
+
+  .content_cards-impression,
+  .content_cards-activity {
+    height: 120px;
+  }
+
+  .content_cards-impression h3,
+  .content_cards-activity h3,
+  .content_cards-coin h3,
+  .content_cards-portfolio h3 {
+    font-size: 14px;
+  }
+
+  .content_cards-impression button {
+    font-size: 8px;
+    margin: 0;
+  }
+
+  .content_cards-impression button:last-child {
+    margin-left: 5px;
+  }
+
+  .content_cards-impression .impression-canvas {
+    margin-bottom: 0;
+    height: 80px;
+  }
+
+  .content_cards-coin .content_cards-value {
+    font-size: 18px;
+  }
+
+  .content_cards-coin .content_cards-inline div:first-child {
+    max-width: 50%;
+  }
+
+  .content_cards-coin .content_cards-value span {
+    font-size: 10px;
+  }
+
+  .content_cards-coin .content_cards-converted {
+    font-size: 10px;
+  }
+
+  .content_cards-activity {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 0;
+  }
+
+  .content_cards-activity h3 {
+    padding: 10px;
+  }
+
+  .content_cards-act {
+    padding: 10px;
+  }
+
+  .content_cards-act .act-content {
+    display: flex;
+    align-items: center;
+  }
+
+  .content_cards-act .act-content i {
+    font-size: 10px;
+    width: 32px;
+    height: 24px;
+  }
+
+  .content_cards-act .act-content .act-description p {
+    font-size: 14px;
+  }
+  .content_cards-act .act-content .act-description p.act-adress {
+    font-size: 10px;
+  }
+
+  .content_cards-portfolio .content_cards-block {
+    padding: 0;
+    height: 100% !important;
+  }
+
+  .content_cards-portfolio .content_cards-block p {
+    font-size: 10px;
+  }
+
+  .content_cards-portfolio .content_cards-block:last-child p {
+    font-size: 14px;
+  }
+
+  .content_cards-portfolio .content_cards-block:last-child p:last-child {
+    font-size: 10px;
+  }
+
+  .content_cards-portfolio .content_cards-block .port-canvas div {
+    margin: 0;
+  }
+  .content_cards-portfolio .content_cards-block .port-canvas {
+    height: 40px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hide-on-xs {
+    display: none !important;
+  }
+
+  .app {
+    overflow-y: scroll !important;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    box-shadow: 5px 0 5px #02020233;
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+  }
+
+  .content {
+    width: calc(100vw - 60px);
+  }
+
+
+  .content_section.content_carrousel-xs {
+    padding-right: 0 !important;
+  }
+
+  .coin-card {
+    width: 300px;
+    margin: 20px 10px;
+    height: 175px;
+    padding: 20px;
+  }
+
+  .coin-card .coin-card_content-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .coin-card .coin-card_content-icon i {
+    font-size: 24px;
+  }
+
+  .coin-card p.coin-card_content-value {
+    font-size: 32px;
+  }
+
+  .coin-card p.coin-card_content-cap {
+    font-size: 18px;
+  }
+
+  .card {
+    width: 300px;
+  }
+
+  .content_cards-impression,
+  .content_cards-activity {
+    height: 180px;
+  }
+
+  .content_cards-coin {
+    height: 160px;
+  }
+
+  .content_cards-coin .content_cards-growth {
+    top: 48px;
+    right: 12px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+
+  .content_menu-crypto-xs ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+
+  .content_menu-crypto-xs ul li {
+    list-style: none;
+    background-color: color-mix(in srgb, var(--icon-color) 10%, #ffffff00 30%);
+    color: var(--icon-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+  }
+
+  .content_menu-crypto-xs ul li.active-coin{
+    background-color: color-mix(in srgb, var(--icon-color) 50%, #ffffff00 30%);
+  }
+
+  .content_cards-portfolio {
+    margin-bottom: 10px;
+  }
+  .content_cards-portfolio .port-canvas {
+    height: 60px !important;
+    padding-left: 10px;
+  }
+  .content_cards-portfolio .port-canvas div {
+    margin-left: 10px !important;
   }
 }
